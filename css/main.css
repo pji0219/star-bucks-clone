@@ -72,6 +72,18 @@ a {
   text-decoration: underline;
 }
 
+.btn--black {
+  color: #000;
+  border-color: #000;
+  transition: 0.4s;
+}
+
+.btn--black:hover {
+  color: white;
+  background-color: #000;
+  text-decoration: underline;
+}
+
 /* HEADER */
 header {
   position: fixed;
@@ -760,4 +772,116 @@ header .badges .badge > a > img {
 
 .favorite .inner .btn {
   opacity: 1;
+}
+
+/* MAGAZINE */
+.magazine {
+  background-image: url('../images/magazine_bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  overflow: hidden;
+}
+
+.magazine .inner {
+  height: 400px;
+}
+
+.magazine .inner .magazine__title {
+  position: absolute;
+  padding-top: 135px;
+  padding-left: 55px;
+  margin: 0 auto;
+}
+
+.magazine .inner .magazine__img {
+  position: absolute;
+  bottom: auto;
+  top: 0;
+  right: 50%;
+  margin-right: -483px;
+}
+
+.magazine .inner .btn {
+  position: absolute;
+  top: 70%;
+  left: 360px;
+}
+
+/* FIND STORE */
+.store {
+  background-image: url('../images/store_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  overflow: hidden;
+}
+
+.store .inner {
+  height: 400px;
+}
+
+.store .inner .store__img_1 {
+  position: absolute;
+  height: 228px;
+  top: 149px;
+  left: 390px;
+  width: 228px;
+  z-index: 5;
+}
+
+.store .inner .store__img_2 {
+  position: absolute;
+  height: 312px;
+  top: 0;
+  left: 160px;
+  width: 366px;
+  z-index: 4;
+}
+
+.store .inner .store__img_3 {
+  height: 142px;
+  left: 520px;
+  position: absolute;
+  top: -60px;
+  width: 343px;
+  z-index: 4;
+}
+
+.store .inner .store__img_4 {
+  height: 102px;
+  position: absolute;
+  right: 30px;
+  top: 298px;
+  width: 230px;
+  z-index: 4;
+}
+
+/* FOOTER */
+
+footer .inner {
+  height: 214;
+}
+
+footer .inner .footer__left .menu {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  /* display: inline-block; */
+  /* left: 50%; */
+  /* position: relative; */
+}
+
+footer .inner .footer__left .menu:not(:last-child) {
+  margin-right: 20px;
+}
+
+footer .inner .footer__left .menu > ul {
+  list-style: none;
+}
+
+footer .inner .footer__left .menu > ul > li {
+  display: block;
 }
